@@ -18,10 +18,10 @@ metadata:
   name: config-management
   namespace: config-management-system
 spec:
-  clusterName: my-cluster
+  clusterName: kube10e-k3d-cluster
   git:
-    syncRepo: git@github.com:<GITHUB-USERNAME>/anthos-config-management-samples.git
+    syncRepo: git@github.com:rgauny/config-sync.git
     syncBranch: main
     secretType: ssh
-    policyDir: "hello-namespace/config-root"
+    policyDir: "config-root"
 # [END anthosconfig_hello_namespace_config_management] 
